@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Contact Information</title>
+</head>
+
+<style>
+	#header {
+		background: rgb(44, 79, 202);
+		font-family: Arial;
+		height: 100px;
+	
+	}
+    ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		background-color: #000;
+		
+	}
+
+
+	li {
+		float: left;
+		border-right: 1px solid #bbb;
+		
+	}
+	
+	li:last-child {
+		border-right: none;
+	}
+	
+	li a {
+		display: block;
+		color: rgb(245, 230, 230);
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	
+	}
+	
+	li a:hover:not(.active) {
+		background-color: #050303;
+	
+	}	
+	
+	.active {
+		background-color: #4f99ca;
+		
+	}
+
+</style>
+
+<div id="header">
+		
+  <ul style="display: inline;">
+    <li> <a href="./index.html"> Home </a></li>
+    <li> <a href="./about.html"> About </a></li>
+    <li> <a href="#My Work"> My Work </a></li>
+    <li> <a class="active" href="./contact.html"> Contact Information </a></li>
+    <li><img src="https://raw.githubusercontent.com/appbrewery/webdev/main/kitten.jpeg" alt="cat in hand" height="100"></li>
+  </ul>	
+
+</div>
+
+<body>
+  <h1>Contact Me</h1>
+  <p>Tel: +1 310-739-6999</p>
+  <p>Email: adamstockhoff@gmail.com</p>
+  <p>Address:</p>
+  <p>
+    Anywhere in the world<br />
+    Some City<br />
+    Some Country <br />
+  </p> 
+</body>
+</html>
