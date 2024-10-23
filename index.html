@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam's Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     </head>
+  <body>
+
+    <div id="cursor"></div>
+      <script>
+        let cursor = document.querySelector('#cursor');
+        let body = document.querySelector('body');
+        document.addEventListener('mousemove', (e) => {
+          body.style.backgroundPositionX = e.clientX/-4 + 'px';
+          body.style.backgroundPositionY = e.clientY/-4 + 'px';
+          cursor.style.top = e.clientY + 'px';
+          cursor.style.left= e.clientX + 'px';
+        })
+      </script>
+    <nav>
+        <a href="#" class="logo"><span>Adam</span></a>
+        <ul class="links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <!-- <a href="#timeline">Timeline</a>  DITHERED OUT FOR NOW WHILE MAKING TIMELINE-->
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </ul>
+
+        <i class='bx bx-menu-alt-right' id="menu"></i>
+         <a href="#contact" class="btn">Contact Me</a>
+    </nav>
+
+    <section id="home">
+        <img object-fit= cover; src="/Images/adampicture.jpg" alt="adam stockhoff profile picture">
+
+        <div class="info-box"> 
+          <h1><span>Adam Stockhoff</span></h1>
+          <h3><span>Programmer</span> based in LA</h3>
+          <p>After six years navigating the fast-paced worlds of sales and consulting, I hit pause to explore my passion for coding.
+             I spent 11 months traveling through Asia and South America, soaking up new cultures and perspectives while diving into programming courses.
+              Now, I’m channeling that same energy into building a portfolio that blends my business know-how with creative coding solutions.
+            </p> </div>
+        <div class="btn-box"> 
+          <a href="mailto:adamstockhoff@gmail.com" target="_blank" rel="noreferrer" class="btn"> Hire </a>
+            <a href="#contact" class="btn"> Contact Me</a>
+        </div>
+    </section>
+  
+    <section id="about">
+      <div class="about-box">
+        <h1><span>Who am I?</span></h1>
+        <p>
+          Following six rewarding years in sales and consulting, where I honed my skills in implementation and strategic pricing, I decided to take a step back and explore the world, traveling through Asia and South America. 
+          Along the way, I embraced new perspectives and dove into programming, learning both front-end and back-end skills. 
+          Now, I'm combining my business acumen with my technical knowledge to build a coding portfolio that highlights my ability to craft innovative solutions with real-world impact.
+        </p>
+
+        <h2><span>Skills</span></h2>
+          <div class="skills">
+              <ul>
+                <li>
+                  <span><i class='bx bxs-chevron-right'></i>HTML</span>
+                </li>
+                <li>
+                  <span><i class='bx bxs-chevron-right'></i>CSS</span>
+                </li>
+                <li>
+                  <span><i class='bx bxs-chevron-right'></i>JavaScript</span>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <span><i class='bx bxs-chevron-right'></i>React</span>
+                </li>
+                <li>
+                  <span><i class='bx bxs-chevron-right'></i>Node</span>
+                </li>
+                <li>
+                  <span><i class='bx bxs-chevron-right'></i>Client Management</span>
+                </li>
+              </ul>
+
+          </div>
+      </div>
+      <img src="/Images/laos2thailand.png" alt="laos2thailand">
+    </section>
+
+    <!-- <section id="timeline">
+        <h1 class="header"><span>My Experience</span></h1>
+    <div class="timeline-line">
+          <span class="timeline-innerline"></span>
+
+      </div>
+      <div class="timeline-items">
+            <ul>
+              <li>
+                  <span class="timeline-point"> </span>
+                  <span class="date">2011</span>
+                  <p> Lorem ipsum dolor sit amet,  quis dolor. Ut sed quam eu ante consectetur pharetra.
+                  </p>
+               </li>
+               <li>
+                  <span class="timeline-point"> </span>
+                  <span class="date">2015</span>
+                  <p> Lorem ipsum dolor sit amet, or vitae quis dolor. Ut sed quam eu ante consectetur pharetra.
+                  </p>
+                </li>
+                <li>
+                    <span class="timeline-point"> </span>
+                    <span class="date">2018</span>
+                    <p> Lorem ipsum dolor sit amet, c vitae quis dolor. Ut sed quam eu ante consectetur pharetra.
+                    </p>
+                </li>
+                <li>
+                   <span class="timeline-point"> </span>
+                   <span class="date">2024</span>
+                   <p> Lorem ipsum dolor sit amet, c vitae quis dolor. Ut sed quam eu ante consectetur pharetra.
+                   </p>
+                </li>
+                 <li>
+                  <span class="timeline-point"> </span>
+                  <span class="date">2024</span>
+                  <p> Lorem ipsum dolor sit amet, c vitae quis dolor. Ut sed quam eu ante consectetur pharetra.
+                  </p>
+                </li>
+              </ul>
+       </div>
+    
+      
+    </section> -->
+
+    <section id="services">
+      <h1 class="header"><span>Services</span></h1>
+      <div class="services-container">
+          <div class="box">
+            <h1><span>Front-End</span></h1>
+            <p>
+              Specializing in front-end development, I create responsive, visually engaging websites that deliver seamless user experiences across all devices. With a focus on clean, efficient code, I bring designs to life while ensuring optimal performance and accessibility.   
+            </p>
+            <img src="/Images/front-end-development-colorado.jpeg" alt="websdesign">
+          </div>
+          <div class="box">
+            <h1><span>Back-End</span></h1>
+            <p>
+              With expertise in back-end development, I build robust, scalable server-side solutions that power dynamic websites and applications. From database management to API integration, I ensure seamless data flow and secure, efficient performance behind the scenes.  
+            </p>
+            <img src="/Images/back-end-development.jpeg" alt="websdesign">
+          </div>
+          <div class="box">
+            <h1><span>Coding Consultation</span></h1>
+            <p>
+              I offer personalized coding and programming consultation services to help businesses and individuals navigate their technical challenges. Whether you need guidance on project architecture, code optimization, or best practices, I provide clear, actionable insights tailored to your unique goals. 
+            </p>
+            <img src="/Images/programconsulting.jpeg" alt="websdesign">
+          </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="header"><span>Contact</span></h1>
+        <form target="_blank" action="https://formsubmit.co/adamstockhoff@gmail.com" method="POST">
+          <div class="input-box">
+            <span>Full Name</span>
+            <input placeholder="Enter Your Full Name" name="name" required/>
+           </div>
+          <div class="input-box">
+            <span>Your Email</span>
+            <input type="email" placeholder="Enter Your Email" name="email" required/>
+          </div>
+          <div class="input-box">
+             <span>Message</span>
+            <textarea placeholder="Enter Your Message" align-items="center"; name="message" required></textarea>
+          </div>
+          <div class="btn">
+            <!-- Need to figure out how to get the button for submit to work and look like the others. -->
+         
+            Submit
+          </div>
+        </form>
+    </section>
+
+    <footer>
+      <div class="col-left">
+           <div class="col-box">
+            <span><i class='bx bxs-home-smile' ></i></span>
+            <span>5712 Natick Avenue</span>
+           </div>
+           <div class="col-box">
+            <a href="mailto:adamstockhoff@gmail.com" target="_blank" rel="noreferrer"><span><i class='bx bxs-envelope'></i></span></a>
+            <span>adamstockhoff@gmail.com</span>
+           </div>
+          <div class="col-box">
+           <span><i class='bx bxs-phone' ></i></span>
+            <span>+1(310)739-6999</span>
+           </div>
+      </div>
+      <div class="col-right">
+        <span>About My Services</span>
+        <p>After six years navigating the fast-paced worlds of sales and consulting, I hit pause to explore my passion for coding. 
+          Now, I’m channeling that same energy into building a portfolio that blends my business know-how with creative programming solutions. </p>
+
+          <div class="social-icons">
+            <a href="https://www.facebook.com/adam.stockhoff/" target="_blank"><span><i class='bx bxl-facebook-circle'></i></span></a>
+            <a href="https://www.instagram.com/adamstockhoff/profilecard/?igsh=cm9tcXhnbXplemlj" target="_blank"><span><i class='bx bxl-instagram-alt' ></i></span></a>
+            <a href="https://www.linkedin.com/in/adam-stockhoff/" target="_blank"><span><i class='bx bxl-linkedin-square' ></i></span></a>
+          </div>
+      </div>
+    </footer>
+
+<script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
